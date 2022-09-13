@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #010505;
+    /* background: rgb(182, 201, 13); */
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.about_us .main{
+    width: 100%;
+    /* border:2px solid white; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 2px;
+    background-color: black;
+
+}
+
+.about_us .heading{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    /* border:1px solid rgba(202, 214, 34, 0.925); */
+    /* margin:10px; */
+    padding:0px 80px;
+    padding-bottom: 0px;
+    text-align: center;
+
+}
+.about_us .aboutUs{
+    padding: 25px 30px;
+    margin: 5px 0;
+}
+
+.about_us .picture:hover{
+    transform: scale(1); 
+}
+.about_us .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.about_us .container{
+    height: 200px;
+    width: 100%;
+    color: aliceblue;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 4fr 1fr ;
+    grid-column-gap: 12px;
+    /* border: 1px solid white; */
+    
+   
+}
+
+.about_us .button{
+    /* border:1px solid rgb(179, 66, 66); */
+    height:auto;
+    width:50%;
+    margin-left: 60px;
+   display:grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-column-gap: 12px;
+   text-align: center;
+    
+}
+
+/* codepen */
+.about_us a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+   
+}
+.about_us a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.about_us a:nth-child(1){
+    filter: hue-rotate(310deg);
+}
+.about_us a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.about_us a span{
+    position: absolute;
+    display: block;
+}
+.about_us a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.about_us a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.about_us a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.about_us a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+/* Bootstrap contact us */
+.about_us .template-card{
+    background-color: #010505;
+    /* width: 85%; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 12px;
+    margin-top:30px;
+    margin-right:auto;
+    margin-left: auto;
+}
+.about_us .block_1{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    margin-left: 4em;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+}
+.about_us .block_2{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 12px;
+}
+.about_us .card-title{
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777; font-family: 'Ultra', sans-serif;   
+	font-size: 20px;
+	line-height: 42px;
+}
